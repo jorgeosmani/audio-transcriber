@@ -51,6 +51,7 @@ Todo el reconocimiento de voz se hace **en tu computadora** con [faster-whisper]
 ---
 
 ## Instalación
+
 ### Paso previo: descargar el proyecto
 
 1. En la página del repositorio pulsa el botón verde **Code** y luego **Download ZIP**.
