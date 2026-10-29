@@ -51,13 +51,23 @@ Todo el reconocimiento de voz se hace **en tu computadora** con [faster-whisper]
 ---
 
 ## Instalación
+### Paso previo: descargar el proyecto
 
+1. En la página del repositorio pulsa el botón verde **Code** y luego **Download ZIP**.
+2. Descomprime el archivo donde prefieras. Se creará una carpeta llamada `audio-transcriber-main`.
+
+Si usas Git, también puedes clonarlo:
+
+```bash
+git clone https://github.com/jorgeosmani/audio-transcriber.git
+cd audio-transcriber
+```
 ### Opción A: lanzador automático (la más fácil)
 
-1. Descomprime la carpeta del proyecto donde prefieras.
+1. Abre la carpeta del proyecto que descargaste en el paso previo.
 2. Ejecuta el lanzador de tu sistema:
    - **Windows:** doble clic en `iniciar_windows.bat`.
-   - **macOS / Linux:** abre una terminal en la carpeta y ejecuta `./iniciar_mac_linux.sh`.
+   - **macOS / Linux:** abre una terminal en la carpeta y ejecuta bash iniciar_mac_linux.sh.
 
 La primera vez el lanzador crea un entorno virtual (`.venv`) e instala todo; tarda unos minutos. Las siguientes veces la aplicación abre directamente.
 
@@ -68,7 +78,7 @@ La primera vez el lanzador crea un entorno virtual (`.venv`) e instala todo; tar
 ### Opción B: instalación manual
 
 ```bash
-cd transcriptor
+cd audio-transcriber-main
 python -m venv .venv
 
 # Activar el entorno
@@ -278,7 +288,7 @@ En modo *Automático*, si la GPU falla por falta de librerías, la aplicación s
 ## Estructura del proyecto
 
 ```
-transcriptor/
+audio-transcriber/
 ├── app.py                 # Interfaz gráfica (ejecutar este)
 ├── cli.py                 # Versión de terminal
 ├── motor.py               # Carga del modelo y transcripción (faster-whisper)
