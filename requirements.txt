@@ -1,0 +1,8 @@
+# Motor de reconocimiento de voz (Whisper optimizado). Lee mp3, wav, ogg, opus, m4a, flac…
+faster-whisper>=1.1.0
+# Interfaz gráfica moderna
+customtkinter>=5.2.0
+# Exportar a Word (.docx)
+python-docx>=1.1.0
+# Arrastrar y soltar archivos en la ventana (opcional, si falla la app funciona igual)
+tkinterdnd2>=0.4.2
