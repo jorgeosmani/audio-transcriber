@@ -68,7 +68,7 @@ cd audio-transcriber
 1. Abre la carpeta del proyecto que descargaste en el paso previo.
 2. Ejecuta el lanzador de tu sistema:
    - **Windows:** doble clic en `iniciar_windows.bat`.
-   - **macOS / Linux:** abre una terminal en la carpeta y ejecuta bash iniciar_mac_linux.sh.
+   - **macOS / Linux:** abre una terminal en la carpeta y ejecuta `bash iniciar_mac_linux.sh`.
 
 La primera vez el lanzador crea un entorno virtual (`.venv`) e instala todo; tarda unos minutos. Las siguientes veces la aplicación abre directamente.
 
@@ -79,7 +79,7 @@ La primera vez el lanzador crea un entorno virtual (`.venv`) e instala todo; tar
 ### Opción B: instalación manual
 
 ```bash
-cd audio-transcriber-main
+cd audio-transcriber-main   # o audio-transcriber si usaste git clone
 python -m venv .venv
 
 # Activar el entorno
